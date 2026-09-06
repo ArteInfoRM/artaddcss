@@ -1,0 +1,12 @@
+/dist/
+*.zip
+*.log
+/config.xml
+/config_*.xml
+/config/xml/
+/cache/
+/tmp/
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db

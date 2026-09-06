@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>artaddcss - README</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --text: #1f2933;
+            --muted: #5f6b7a;
+            --border: #d8dee6;
+            --panel: #f6f8fa;
+            --accent: #0b7285;
+        }
+        body {
+            margin: 0;
+            background: #fff;
+            color: var(--text);
+            font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        }
+        main {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding: 32px 24px 56px;
+        }
+        h1, h2, h3, h4 {
+            line-height: 1.25;
+            margin: 1.8em 0 .6em;
+        }
+        h1 {
+            margin-top: 0;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            font-size: 2rem;
+        }
+        h2 {
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+            font-size: 1.45rem;
+        }
+        h3 {
+            font-size: 1.18rem;
+        }
+        p {
+            margin: .7em 0;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        blockquote {
+            margin: 1em 0;
+            padding: .7em 1em;
+            color: var(--muted);
+            border-left: 4px solid var(--border);
+            background: var(--panel);
+        }
+        code {
+            padding: .15em .35em;
+            border-radius: 4px;
+            background: var(--panel);
+            font-family: Consolas, Monaco, "Courier New", monospace;
+            font-size: .92em;
+        }
+        pre {
+            overflow: auto;
+            padding: 14px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: var(--panel);
+        }
+        pre code {
+            padding: 0;
+            background: transparent;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            padding: 8px 10px;
+            border: 1px solid var(--border);
+            vertical-align: top;
+        }
+        th {
+            background: var(--panel);
+            text-align: left;
+        }
+        ul, ol {
+            padding-left: 1.5em;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid var(--border);
+            margin: 2em 0;
+        }
+        .generated-note {
+            margin-bottom: 24px;
+            padding: 10px 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: var(--panel);
+            color: var(--muted);
+            font-size: .92em;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="generated-note">Generated from the Markdown source included with the module.</div>
+<h1>Art Theme Add CSS</h1>
+<p>Art Theme Add CSS is a PrestaShop module by Tecnoacquisti.com® that lets a merchant add custom CSS to the active shop theme from the back office.</p>
+<h2>Features</h2>
+<ul>
+<li>Stores a custom CSS snippet for each shop.</li>
+<li>Adds the CSS to the <code>displayHeader</code> hook when the feature is enabled.</li>
+<li>Provides a back-office switch to enable or disable the custom stylesheet.</li>
+<li>Removes its configuration value and database table during uninstallation.</li>
+</ul>
+<h2>Compatibility</h2>
+<p>The source declares module version <code>1.1.7</code>. It does not declare a PrestaShop or PHP compatibility matrix. It uses the legacy <code>Module</code> and <code>HelperForm</code> APIs, so compatibility must be verified on the target shop before production use.</p>
+<h2>Installation</h2>
+<ol>
+<li>Back up the shop database and files.</li>
+<li>Upload the <code>artaddcss</code> directory, or install a ZIP containing that single</li>
+</ol>
+<p>   top-level directory, through the PrestaShop back office.</p>
+<ol>
+<li>Install the module from <strong>Modules and Services</strong>.</li>
+<li>Open its configuration page, enter the required CSS, and enable the</li>
+</ol>
+<p>   <strong>Custom CSS Code</strong> switch.</p>
+<ol>
+<li>Clear the PrestaShop cache and test the storefront in the active theme.</li>
+</ol>
+<h2>Configuration and security</h2>
+<p>The CSS field is intentionally rendered in the shop header. Only trusted back-office users who are allowed to change the storefront should be granted access to this module. Review custom CSS before saving it, especially in a multistore installation.</p>
+<p>The module stores its value in the <code>art_cssadd</code> database table and uses the <code>ART_HEADER_FEATURE_ACTIVE</code> configuration key for the enable switch.</p>
+<h2>Support</h2>
+<p>For support with an existing installation, contact <a href="https://www.tecnoacquisti.com/">Tecnoacquisti.com®</a> at helpdesk@tecnoacquisti.com.</p>
+<h2>Security and supply chain</h2>
+<p>Report vulnerabilities privately as described in <a href="https://github.com/ArteInfoRM/artaddcss/blob/main/SECURITY.md">SECURITY.md</a>. The dependency inventory is in <a href="https://github.com/ArteInfoRM/artaddcss/blob/main/THIRD-PARTY-NOTICES.md">THIRD-PARTY-NOTICES.md</a>. The CycloneDX SBOM is retained in the repository as release evidence and is excluded from installation archives.</p>
+<h2>License</h2>
+<p>This project is released under the <a href="https://opensource.org/license/mit/">MIT License</a>. The complete license text is included in <code>LICENSE</code>. Third-party PrestaShop directory guard files retain their original AFL-3.0 notices; see <code>THIRD-PARTY-NOTICES.md</code>.</p>
+
+</main>
+</body>
+</html>

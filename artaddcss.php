@@ -1,13 +1,13 @@
 <?php
 /**
-*  2009-2023 Arte e Informatica
+*  2009-2026 Arte e Informatica
 *
 *  For support feel free to contact us on our website at http://www.arteinformatica.eu
 *
 *  @author    Arte e Informatica <admin@arteinformatica.eu>
-*  @copyright 2009-2023 Arte e Informatica
-*  @license   One Paid Licence By WebSite Using This Module. No Rent. No Sell. No Share.
-*  @version   1.1
+*  @copyright 2009-2026 Arte e Informatica
+*  @license   https://opensource.org/licenses/MIT MIT License
+*  @version   1.1.8
 */
 
 if (!defined('_PS_VERSION_'))
@@ -17,7 +17,7 @@ class Artaddcss extends Module {
     public function __construct() {
         $this->name = 'artaddcss';
         $this->tab = 'front_office_features';
-        $this->version = '1.1.7';
+        $this->version = '1.1.8';
         $this->author = 'Tecnoacquisti.com';
         $this->need_instance = 0;
 		$this->bootstrap = true;
