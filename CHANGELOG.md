@@ -8,6 +8,14 @@ release is published.
 
 ## [Unreleased]
 
+## [1.1.10] - 2026-09-06
+
+### Fixed
+
+- Corrected the database class reference used during module installation.
+- Removed an assignment to an undeclared module property.
+- Completed the documentation directory guard metadata required by the module validator.
+
 ## [1.1.9] - 2026-09-06
 
 ### Fixed

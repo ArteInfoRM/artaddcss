@@ -7,7 +7,7 @@
 *  @author    Arte e Informatica <admin@arteinformatica.eu>
 *  @copyright 2009-2026 Arte e Informatica
 *  @license   https://opensource.org/licenses/MIT MIT License
-*  @version   1.1.9
+*  @version   1.1.10
 */
 
 if (!defined('_PS_VERSION_'))
@@ -17,7 +17,7 @@ class Artaddcss extends Module {
     public function __construct() {
         $this->name = 'artaddcss';
         $this->tab = 'front_office_features';
-        $this->version = '1.1.9';
+        $this->version = '1.1.10';
         $this->author = 'Tecnoacquisti.com';
         $this->need_instance = 0;
 
@@ -45,7 +45,7 @@ class Artaddcss extends Module {
 	   $this->registerHook('displayHeader') &&
 	   //$this->registerHook('backOfficeHeader') &&
 	   //$this->registerHook('header') &&
-	   DB::getInstance()->Execute($query) &&
+	   Db::getInstance()->Execute($query) &&
 	   Configuration::updateValue('ART_HEADER_FEATURE_ACTIVE', '0');
 	   
     }
@@ -184,8 +184,6 @@ class Artaddcss extends Module {
             $lang = new Language((int)Configuration::get('PS_LANG_DEFAULT'));
             $helper->default_form_language = $lang->id;
             $helper->allow_employee_form_lang = Configuration::get('PS_BO_ALLOW_EMPLOYEE_FORM_LANG') ? Configuration::get('PS_BO_ALLOW_EMPLOYEE_FORM_LANG') : 0;
-            $this->fields_form = array();
-
             $helper->identifier = $this->identifier;
             $helper->submit_action = 'submitSetting';
             $helper->currentIndex = $this->context->link->getAdminLink('AdminModules', false).'&configure='.$this->name.'&tab_module='.$this->tab.'&module_name='.$this->name;
