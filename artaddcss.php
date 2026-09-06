@@ -7,7 +7,7 @@
 *  @author    Arte e Informatica <admin@arteinformatica.eu>
 *  @copyright 2009-2026 Arte e Informatica
 *  @license   https://opensource.org/licenses/MIT MIT License
-*  @version   1.1.8
+*  @version   1.1.9
 */
 
 if (!defined('_PS_VERSION_'))
@@ -17,9 +17,14 @@ class Artaddcss extends Module {
     public function __construct() {
         $this->name = 'artaddcss';
         $this->tab = 'front_office_features';
-        $this->version = '1.1.8';
+        $this->version = '1.1.9';
         $this->author = 'Tecnoacquisti.com';
         $this->need_instance = 0;
+
+        $this->ps_versions_compliancy = [
+            'min' => '1.7.0',
+            'max' => _PS_VERSION_,
+        ];
 		$this->bootstrap = true;
 
         parent::__construct();

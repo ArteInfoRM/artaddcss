@@ -6,8 +6,8 @@
 *
 *  @author    Arte e Informatica <admin@arteinformatica.eu>
 *  @copyright 2009-2026 Arte e Informatica
-*  @version   0.1
 *  @license   https://opensource.org/licenses/MIT MIT License
+*  @version   0.1
 */
 
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');

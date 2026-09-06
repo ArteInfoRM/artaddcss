@@ -8,6 +8,13 @@ release is published.
 
 ## [Unreleased]
 
+## [1.1.9] - 2026-09-06
+
+### Fixed
+
+- Declared the PrestaShop 1.7.0+ compatibility matrix required by the module validator.
+- Corrected validator-required PHP file comment metadata.
+
 ## [1.1.8] - 2026-09-06
 
 ### Added

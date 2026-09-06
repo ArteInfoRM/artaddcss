@@ -12,10 +12,10 @@ merchant add custom CSS to the active shop theme from the back office.
 
 ## Compatibility
 
-The source declares module version `1.1.7`. It does not declare a PrestaShop
-or PHP compatibility matrix. It uses the legacy `Module` and `HelperForm`
-APIs, so compatibility must be verified on the target shop before production
-use.
+The module declares version `1.1.8` and supports PrestaShop `1.7.0` or later,
+up to the version running the shop. It uses the legacy `Module` and
+`HelperForm` APIs, so compatibility must be verified on the target shop before
+production use.
 
 ## Installation
 
