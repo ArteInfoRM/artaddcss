@@ -8,6 +8,20 @@ release is published.
 
 ## [Unreleased]
 
+## [1.1.11] - 2026-09-07
+
+### Changed
+
+- Replaced the back-office PDF documentation link with an accessible module header and README and changelog links.
+- Removed the obsolete English PDF user guide from the module package.
+- Completed the English and Italian translations for all active module strings.
+- Updated the module icon.
+
+### Fixed
+
+- Added the MIT license tag required by the validator to the documentation directory guard.
+- Corrected the back-office footer logo path for PrestaShop 9.
+
 ## [1.1.10] - 2026-09-06
 
 ### Fixed

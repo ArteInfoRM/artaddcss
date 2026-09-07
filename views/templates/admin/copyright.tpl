@@ -13,8 +13,8 @@
 
 <div class="panel">
     <h3><i class="icon icon-code"></i> {l s='Credits' mod='artaddcss'}</h3>
-    <a href="https://www.tecnoacquisti.com" title="PrestaShop Modules" target="_blank">
-        <img src="../modules/artaddcss/views/img//logo-tecnoacquisti.svg" style="float:right; max-width: 350px;" alt="{l s='PrestaShop Modules' mod='artaddcss'}">
+    <a href="https://www.tecnoacquisti.com" title="{l s='PrestaShop Modules' mod='artaddcss'}" target="_blank" rel="noopener noreferrer">
+        <img src="{$footer_logo_url|escape:'html':'UTF-8'}" style="float:right; max-width: 350px;" alt="{l s='PrestaShop Modules' mod='artaddcss'}">
     </a>
     <p>
     <h4><strong>{l s='We provide customized solutions to help you develop your online business' mod='artaddcss'}</strong></h4>

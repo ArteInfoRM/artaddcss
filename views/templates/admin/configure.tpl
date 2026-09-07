@@ -11,16 +11,37 @@
 *
 *}
 
-<div class="panel">
-
-	<h3><i class="icon icon-tags"></i> {l s='Documentation' mod='artaddcss'}</h3>
-	<p>
-	{l s='Art Theme add CSS (Cascading Style Sheets) is a simple module for adding style (e.g., fonts, colors, spacing) to your Shop Theme' mod='artaddcss'}<br>
-		<b>&raquo; {l s='You can get a PDF documentation to configure this module' mod='artaddcss'}:</b>
-		<ul>
-			<li><a href="../modules/artaddcss/readme_en.pdf" target="_blank">{l s='User Guide (EN)' mod='artaddcss'}</a></li>
-		</ul>
-		
-	</p>
-	
+<div class="panel artaddcss-admin-header">
+    <div class="artaddcss-admin-header-main">
+        <img
+            src="{$module_logo_url|escape:'html':'UTF-8'}"
+            alt="{$module_display_name|escape:'html':'UTF-8'}"
+            class="artaddcss-admin-logo"
+            width="72"
+        >
+        <div class="artaddcss-admin-title">
+            <h2>{$module_display_name|escape:'html':'UTF-8'}</h2>
+            <p>{$module_description|escape:'html':'UTF-8'}</p>
+        </div>
+    </div>
+    <div class="artaddcss-admin-actions">
+        <a
+            href="{$readme_url|escape:'html':'UTF-8'}"
+            class="btn btn-default"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="icon icon-book"></i>
+            {l s='Open README' mod='artaddcss'}
+        </a>
+        <a
+            href="{$changelog_url|escape:'html':'UTF-8'}"
+            class="btn btn-default"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="icon icon-list"></i>
+            {l s='Open changelog' mod='artaddcss'}
+        </a>
+    </div>
 </div>

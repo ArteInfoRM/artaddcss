@@ -7,7 +7,7 @@
 *  @author    Arte e Informatica <admin@arteinformatica.eu>
 *  @copyright 2009-2026 Arte e Informatica
 *  @license   https://opensource.org/licenses/MIT MIT License
-*  @version   1.1.10
+*  @version   1.1.11
 */
 
 if (!defined('_PS_VERSION_'))
@@ -17,7 +17,7 @@ class Artaddcss extends Module {
     public function __construct() {
         $this->name = 'artaddcss';
         $this->tab = 'front_office_features';
-        $this->version = '1.1.10';
+        $this->version = '1.1.11';
         $this->author = 'Tecnoacquisti.com';
         $this->need_instance = 0;
 
@@ -64,6 +64,16 @@ class Artaddcss extends Module {
 
     public function getContent()
     {
+        $this->context->controller->addCSS($this->_path . 'views/css/admin.css');
+        $this->context->smarty->assign([
+            'module_display_name' => $this->displayName,
+            'module_description' => $this->description,
+            'module_logo_url' => $this->_path . 'logo.png',
+            'readme_url' => $this->_path . 'documentation/README.html',
+            'changelog_url' => $this->_path . 'documentation/CHANGELOG.html',
+            'footer_logo_url' => $this->_path . 'views/img/logo-tecnoacquisti.svg',
+        ]);
+
         $id_shop = $this->context->shop->id;
         if (!is_numeric($id_shop)) {
             $id_shop = 1;
